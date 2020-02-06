@@ -7,8 +7,7 @@ export const products = [
     model_2: 'Galaxy S9 Plus',
     model_3: 'Galaxy Note 9',
     model_4: 'Galaxy S10e',
-    model_5: 'Galaxy S10 Plus',
-    idSelect: 'mySelect_1'
+    model_5: 'Galaxy S10 Plus'
   },
   {
     name: 'Apple',
@@ -18,8 +17,7 @@ export const products = [
     model_2: 'iPhone 8 Plus',
     model_3: 'iPhone XR',
     model_4: 'iPhone 11',
-    model_5: 'iPhone 11 Pro Max',
-    idSelect: 'mySelect_2'
+    model_5: 'iPhone 11 Pro Max'
   },
   {
     name: 'Huawei',

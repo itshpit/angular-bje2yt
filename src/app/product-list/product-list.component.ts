@@ -16,14 +16,8 @@ export class ProductListComponent {
     window.alert(mobile +' is added to your Cart');
   }
 
-  
-
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
-  }
-
-  itemsSelected(counter) {
-    window.alert('"counter" items added to your cart');
   }
 }
 
