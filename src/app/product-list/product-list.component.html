@@ -1,5 +1,4 @@
-<h2>Products</h2>
-
+<h2 style="text-align: center">Mobile Phone Brands</h2>
 <div *ngFor="let product of products">
   <h3>
     <a [title]="product.name + ' details'" href="" >
@@ -8,15 +7,30 @@
   </h3>
 
   <p *ngIf="product.description">
-    Description: {{ product.description }}
+    <b>Description</b> {{ product.description }}
+    <br/><br/>
+    <b>Positions:</b> {{ product.nmb }}
   </p>
 
-  <button (click)="share()">
-    Share
+  <select id="mySelector">
+    <option value="model_1"> {{ product.model_1 }} </option>
+    <option value="model_2"> {{ product.model_2 }} </option>
+    <option value="model_3"> {{ product.model_3 }} </option>
+    <option value="model_4"> {{ product.model_4 }} </option>
+    <option value="model_5"> {{ product.model_5 }} </option>
+  </select>
+
+  <br/>
+  <br/>
+
+  <button (click)="addToCart(product.idSelect)">
+    Buy
   </button>
+ 
 
 
 </div>
+
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

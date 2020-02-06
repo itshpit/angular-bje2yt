@@ -10,12 +10,20 @@ import { products } from '../products';
 export class ProductListComponent {
   products = products;
 
-  share() {
-    window.alert('The product has been shared!');
+  addToCart() {
+    var slct = document.getElementById("mySelector") as HTMLSelectElement; 
+    var mobile = slct.options[slct.selectedIndex].text;
+    window.alert(mobile +' is added to your Cart');
   }
+
+  
 
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
+  }
+
+  itemsSelected(counter) {
+    window.alert('"counter" items added to your cart');
   }
 }
 
